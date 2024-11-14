@@ -4,7 +4,7 @@ package com.example.cleanarchitecture
 import android.app.Activity
 import android.os.Bundle
 import android.widget.ImageView
-import com.
+import com.bumptech.glide.Glide
 
 
 class PosterActivity : Activity() {
