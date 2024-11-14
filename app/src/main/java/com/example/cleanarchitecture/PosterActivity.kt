@@ -1,6 +1,8 @@
 package com.example.cleanarchitecture
 
+//com.bumptech.glide.Glide
 import android.os.Bundle
+//import com.bumptech.glide.Glide
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
