@@ -1,12 +1,11 @@
 package com.example.cleanarchitecture
 
 //com.bumptech.glide.Glide
+import android.app.Activity
 import android.os.Bundle
-//import com.bumptech.glide.Glide
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import android.widget.ImageView
+import com.
+
 
 class PosterActivity : Activity() {
 

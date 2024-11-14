@@ -1,7 +1,24 @@
 package com.example.cleanarchitecture
 
 import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
+import android.text.Editable
+import android.text.TextWatcher
+import android.view.View
+import android.widget.EditText
+import android.widget.ProgressBar
+import android.widget.TextView
+import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
 
 class MoviesActivity : Activity() {
@@ -82,9 +99,11 @@ class MoviesActivity : Activity() {
             moviesList.visibility = View.GONE
             progressBar.visibility = View.VISIBLE
 
-            imdbService.searchMovies(queryInput.text.toString()).enqueue(object : Callback<MoviesSearchResponse> {
+            imdbService.searchMovies(queryInput.text.toString()).enqueue(object :
+                Callback<MoviesSearchResponse> {
                 override fun onResponse(call: Call<MoviesSearchResponse>,
-                                        response: Response<MoviesSearchResponse>) {
+                                        response: Response<MoviesSearchResponse>
+                ) {
                     progressBar.visibility = View.GONE
                     if (response.code() == 200) {
                         movies.clear()
