@@ -42,7 +42,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    implementation(libs.glide)
+    implementation(libs.glide.v4160)
     implementation (libs.retrofit)
     implementation (libs.converter.gson)
     implementation(libs.gson)
