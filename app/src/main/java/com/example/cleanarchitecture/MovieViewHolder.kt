@@ -1,11 +1,15 @@
 package com.example.cleanarchitecture
 
+import android.view.LayoutInflater
+import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
+
 class MovieViewHolder(parent: ViewGroup) :
-    RecyclerView.ViewHolder(LayoutInflater.from(parent.context)
+    RecyclerView.ViewHolder(
+        LayoutInflater.from(parent.context)
         .inflate(R.layout.list_item_movie, parent, false)) {
 
     var cover: ImageView = itemView.findViewById(R.id.cover)
