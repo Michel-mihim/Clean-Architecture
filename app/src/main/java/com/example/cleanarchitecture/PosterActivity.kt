@@ -1,6 +1,5 @@
 package com.example.cleanarchitecture
 
-//com.bumptech.glide.Glide
 import android.app.Activity
 import android.os.Bundle
 import android.widget.ImageView
